@@ -1,20 +1,22 @@
 
-title: Dual Power Gathering Midwest
-domain: dpgmidwest.org
-baseurl: "https://www.dpgmidwest.org/"
-logo: "/images/logo-dark-shadow-line.png"
+title: DPG Midwest Document Cloud
+domain: dpgmidwest.org/document-cloud
+baseurl: "https://www.dpgmidwest.org/document-cloud/"
+logo: "images/logo-dark-shadow-line.png"
 language: "English"
-RSS: true
+
+defaults:
+  - scope:
+    path: "assets/documents"
 
 # Search Engine Optimization and Metatag Information
-seo-title: Dual Power Gathering Midwest
-seo-description: 2023 Dual Power Gathering in the midwest region (great lakes and great plains)
+seo-title: DPG Midwest Document Cloud
+seo-description: Document Cloud
 seo-keywords: ""
-favicon: "/images/favicons/favicon.ico"
-thumbnail: "/images/logo-dark-shadow-line.png"
+favicon: "images/favicons/favicon.ico"
+thumbnail: "images/logo-dark-shadow-line.png"
 theme-color: "#000000"
 locale: en_US
-index-policy: index
 adsbot-policy: noindex
 card-type: website
 card-social-type: summary
