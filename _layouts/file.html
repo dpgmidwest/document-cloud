@@ -2,12 +2,6 @@
 layout: default
 ---
 
-{{ content }}
-
 {% if page.type == PDF %}
-    <a href="{{ page.file_path | prepend: site.baseurl}}" download>Download "{{ page.title }}"</a>
-    <br>
-    <div class="container">
-        <object data="{{ page.file_path | prepend: site.baseurl}}" width="800" height="500" class="document"></object>
-    </div>
+    <object data="{{ page.file_path | prepend: site.baseurl}}" width="800" height="500" class="document">
 {% endif %}
