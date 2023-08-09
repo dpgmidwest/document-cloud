@@ -1,4 +1,17 @@
+body {
+    margin: 45px;
+}
+
 object.document {
     width:100vw;
     height:100vh;
+}
+
+footer {
+    display: inline;
+    text-align: center;
+}
+
+footer > * {
+    margin-left: 10px;
 }

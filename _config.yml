@@ -5,10 +5,6 @@ baseurl: "https://www.dpgmidwest.org/document-cloud/"
 logo: "images/logo-dark-shadow-line.png"
 language: "English"
 
-defaults:
-  - scope:
-    path: "assets/documents"
-
 # Search Engine Optimization and Metatag Information
 seo-title: DPG Midwest Document Cloud
 seo-description: Document Cloud
