@@ -5,6 +5,7 @@ layout: default
 {{ content }}
 
 {% if page.type == PDF %}
-    <a href="{{ site.baseurl }}{{ page.file_path }}">Download "{{ page.title }}"</a>
+    <a href="{{ site.baseurl }}{{ page.file_path }}" download>Download "{{ page.title }}"</a>
+    <br>
     <object data="{{ site.baseurl }}{{ page.file_path }}" width="800" height="500" class="document">
 {% endif %}
