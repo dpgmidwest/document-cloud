@@ -8,10 +8,10 @@ object.document {
 }
 
 footer {
-    display: inline;
     text-align: center;
 }
 
 footer > * {
+    display: inline;
     margin-left: 10px;
 }
