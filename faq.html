@@ -1,0 +1,32 @@
+---
+layout: page
+title: FAQ
+permalink: /faq.html
+sections:
+- dual-power
+- our-values
+- the-event
+- format
+- location
+- accessibility
+- kids
+- pets
+- last-year
+- ticket
+- endorsements
+- outside-midwest
+nav-include: true
+---
+
+<section class="plain-section-header">
+  <h1>Frequently Asked Questions</h1>
+</section>
+
+<section class="container container-faq">
+  {% for section in page.sections %}
+    <details id="{{ section }}">
+      {% capture info %}{% include_relative faq/{{ section }}.md %}{% endcapture %}
+      {{ info | markdownify }}
+    </details>
+  {% endfor %}
+</section>
