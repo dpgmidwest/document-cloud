@@ -1,14 +1,12 @@
 ---
 layout: home
 ---
-<section>
-  <h1>Documents</h1>
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url | prepend: site.url}}">{{ post.url }}</a> {% if post.type %}({{ post.type }}){% endif %}
-        <a href="{{ post.file_path | prepend: site.baseurl}}" download>[ download ]</a>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+<h1>Documents</h1>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | prepend: site.url}}">{{ post.url }}</a> {% if post.type %}({{ post.type }}){% endif %}
+      [<a href="{{ post.file_path | prepend: site.baseurl}}" download>download</a>]
+    </li>
+  {% endfor %}
+</ul>
